@@ -7,7 +7,7 @@ export default function HomePage() {
     <>
       <Form
         onSubmit={({ text }, form) => {
-          setTodos([text])
+          setTodos([text, ...todos])
           form.reset()
         }}
       >
